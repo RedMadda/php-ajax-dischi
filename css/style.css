@@ -1,0 +1,42 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+
+/* header */
+
+header{
+    width:100%;
+    height: 80px;
+    background-color: #5B5957;
+    border-bottom: 1px solid #646464;
+}
+
+.logo-spot{
+    width: 50px;
+}
+
+/* main */
+
+.bck-wrapper{
+    width: 100%;
+    height: 120%;
+    background-image: url("https://images.unsplash.com/photo-1477927849362-0fb1e7d59ee6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+}
+
+.disco{
+    width: calc((100% - 12%) / 5);
+    font-family: 'Gowun Batang', serif;
+    background-color: #323232;
+}
+
+.title{
+    /* height: 60px; */
+
+}
+.cover{
+    width: 200px;
+    height: 200px;
+}
