@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
+/* commons */
+a:link,
+a:visited{
+    text-decoration: none;
+}
 
+.hover-grey:hover {
+    background-color:#5F5D5B;
+}
 
 /* header */
 

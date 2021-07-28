@@ -29,7 +29,9 @@ include __DIR__ . "/db/db_dischi.php";
 <body>
     <!-- beginn. header -->
     <header class="container-fluid d-flex align-items-center">
-        <img class="logo-spot" src="img/Spotify.png" alt="Spotify Logo">
+        <a href="#">
+            <img class="logo-spot" src="img/Spotify.png" alt="Spotify Logo">
+        </a>
     </header>
     <!-- /header -->
     
@@ -45,19 +47,30 @@ include __DIR__ . "/db/db_dischi.php";
                 <!-- sections with "disco" => tipo card -->
                     <section class="disco p-4 mb-5 justify-content-center">
                         <!-- title -->
-                        <?php if((strlen($disco["title"])) > 17){?>
-                            <h6 class="title text-white text-center">
-                                <?= $disco["title"]  ?>
-                            </h6>
-                        <?php } else{ ?>
-                            <h5 class="title text-white text-center">
-                                <?= $disco["title"]  ?>
-                            </h5>
-                        <?php }; ?>
-                        
+                        <a class="hover-grey" href="#">
+                            <?php if((strlen($disco["title"])) > 17){?>
+                                <h6 class="title text-white text-center">
+                                    <?= $disco["title"]  ?>
+                                </h6>
+                            <?php } else{ ?>
+                                <h5 class="title text-white text-center">
+                                    <?= $disco["title"]  ?>
+                                </h5>
+                            <?php }; ?>
+                        </a>   
                         <!-- cover img -->
-                        <img class="cover pe-3" src="<?= $disco["poster"]; ?>" alt="Cover     dell'album">
-
+                        <a href="#">
+                            <img class="cover pe-3" src="<?= $disco["poster"]; ?>" alt="Cover dell'album">
+                        </a>
+                        <!-- infos -->
+                        <a class="hover-grey" href="#">
+                            <p class="text-center pt-3">
+                                <small class="text-white text-center">
+                                    <?= $disco["author"];?> | <?= $disco["genre"];?> | <?=  $disco   ["year"]; ?>
+                                </small>
+                            </p>
+                        </a>
+                        
                     </section>
                 <?php endforeach; ?>
                 <!-- /section with "disco" -->
