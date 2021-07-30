@@ -25,6 +25,16 @@ header{
     width: 50px;
 }
 
+select{
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 2px;
+    padding: 20px 30px;
+    margin-top: 1em;
+    margin-bottom: 40px;
+    user-select: none;
+    overflow-x: auto;
+}
+
 /* main */
 
 .bck-wrapper{
